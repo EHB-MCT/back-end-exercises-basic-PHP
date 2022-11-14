@@ -209,62 +209,39 @@ include "geometry.php";
 
 <div id="ex12">
     <h3>Oefening 12</h3>
-    <h4>De Europese Unie:</h4>
-    <p>De Europese Unie telt sinds 2013 in totaal 28 lidstaten.</p>
-    <h5>De volledige lijst van lidstaten, Random gerangschikt</h5>
     <ol>
         <?php
-         //De variabele $arr is nog beschikbaarbaar van oefeningen 9
-        //We kunnen dus geworden hersorteren met de volgende methode
-
-        //Gebruik dezelfde code om de array af te printen
-        //Test dit door de pagina te refreshen
+        // The variable from the previous exercise is still available
+        // So we can reuse it
         shuffle($countries);
-        foreach ($countries as $name) {
-            ?>
+        foreach ($countries as $name) { ?>
             <li>Name: <?php echo $name; ?></li>
         <?php } ?>
     </ol>
-
-
-
 </div>
 
 <div id="ex13">
     <h3>Oefening 13</h3>
-    <h4>De Europese Unie:</h4>
-    <p>De Europese Unie telt sinds 2013 in totaal 28 lidstaten.</p>
-    <h5>De volledige lijst van lidstaten die beginnen met de letter B</h5>
     <ol>
         <?php
         foreach ($countries as $name) {
-            if(substr(strtolower($name),0,1) == "b") { ?>
+            if(substr(strtolower($name),0,1) === "b") { ?>
             <li>Name: <?php echo $name; ?></li>
         <?php }} ?>
     </ol>
-
-
 </div>
 
 <div id="ex14">
     <h3>Oefening 14</h3>
     <?php
-        foreach($countries as $key => $country){
-            if(substr(strtolower($country),0,1) == "b") {
-              unset($countries[$key]);
+        foreach($countries as $key => $country) {
+            if(substr(strtolower($country),0,1) === "b") {
+                unset($countries[$key]);
             }
-          }
+        }
     ?>
-    <h4>De Europese Unie:</h4>
-    <p>De Europese Unie telt sinds 2013 in totaal 28 lidstaten.</p>
-    <h5>De volledige lijst van lidstaten, zonder de landen met de letter B</h5>
     <ol>
         <?php
-         //De variabele $arr is nog beschikbaarbaar van oefeningen 9
-        //We kunnen dus geworden hersorteren met de volgende methode
-
-        //Gebruik dezelfde code om de array af te printen
-        //Test dit door de pagina te refreshen
         sort($countries);
         foreach ($countries as $name) {
             ?>
