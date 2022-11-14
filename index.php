@@ -49,6 +49,10 @@ include "geometry.php";
     <p>Rechthoek: <?php echo calculateSurfaceAreaRectangle(9, 7); ?></p>
 </div>
 
+<div id="ex3">
+    <p>There is no such thing as exercise 3</p>
+</div>
+
 <div id="ex4">
     <h3>Oefening 4</h3>
 
