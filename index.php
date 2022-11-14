@@ -70,27 +70,28 @@ include "geometry.php";
     if (!empty($variable4)) { ?>
         <p>v4 is OK!</p>
     <?php } ?>
-
 </div>
+
 <div id="ex5">
     <h3>Oefening 5</h3>
     <?php
         $test = 20;
-        $nr = 0;
+        $number = 0;
         switch ($test){
             case 10:
-                $nr = 10;
+                $number = 10;
                 break;
             case 20:
-                $nr = 20;
+                $number = 20;
                 break;
             case 30:
-                $nr = 30;
+                $number = 30;
                 break;
         }
     ?>
-    <p>Het nummer is gelijk aan <?php echo $nr;?></p>
+    <p>Het nummer is gelijk aan <?= $number ?></p>
 </div>
+
 <div id="ex6">
     <h3>Oefening 6</h3>
     <?php
