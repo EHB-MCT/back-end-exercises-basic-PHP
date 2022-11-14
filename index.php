@@ -151,26 +151,26 @@ include "geometry.php";
 
 <div id="ex9">
     <h3>Oefening 9</h3>
-    <h4>De Europese Unie:</h4>
-    <p>De Europese Unie telt sinds 2013 in totaal 28 lidstaten.</p>
-    <h5>De volledige lijst van lidstaten, alfabetisch gerangschikt</h5>
-    <ol>
-        <?php
-        //Example array - please igrno writing errors
-        $arr = ['Belgium', 'The Netherlands', 'France','Germany','Italy',
+    <?php
+        // Example array - please ignore writing errors
+        $countries = ['Belgium', 'The Netherlands', 'France','Germany','Italy',
             'Luxemburg','Denmark', 'Ireland', 'UK', 'Greece', 'Portugal', 'Spain',
             'Finland', 'Austria', 'Sweden', 'Cyprus', 'Estonia', 'Hungary',
             'Lithuania', 'Malta', 'Poland', 'Slovenia', 'Slovakia', 'Tsjechië',
-            'Bulagaria', 'Romania', 'Croatia'];
-        sort($arr);
-        foreach ($arr as $name) {
+            'Bulagaria', 'Romania', 'Croatia']; ?>
+    <h4>De Europese Unie:</h4>
+    <p>De Europese Unie telt sinds <?= date('Y') ?> in totaal <?= count($countries) ?> lidstaten.</p>
+    <h5>De volledige lijst van lidstaten, alfabetisch gerangschikt</h5>
+    <ol>
+        <?php
+        sort($countries);
+        foreach ($countries as $name) {
             ?>
             <li>Name: <?php echo $name; ?></li>
         <?php } ?>
     </ol>
-
-
 </div>
+
 <div id="ex10">
     <h3>Oefening 10</h3>
     <table class="table">
@@ -219,8 +219,8 @@ include "geometry.php";
 
         //Gebruik dezelfde code om de array af te printen
         //Test dit door de pagina te refreshen
-        shuffle($arr);
-        foreach ($arr as $name) {
+        shuffle($countries);
+        foreach ($countries as $name) {
             ?>
             <li>Name: <?php echo $name; ?></li>
         <?php } ?>
@@ -237,7 +237,7 @@ include "geometry.php";
     <h5>De volledige lijst van lidstaten die beginnen met de letter B</h5>
     <ol>
         <?php
-        foreach ($arr as $name) {
+        foreach ($countries as $name) {
             if(substr(strtolower($name),0,1) == "b") { ?>
             <li>Name: <?php echo $name; ?></li>
         <?php }} ?>
@@ -249,9 +249,9 @@ include "geometry.php";
 <div id="ex14">
     <h3>Oefening 14</h3>
     <?php
-        foreach($arr as $key => $country){
+        foreach($countries as $key => $country){
             if(substr(strtolower($country),0,1) == "b") {
-              unset($arr[$key]);
+              unset($countries[$key]);
             }
           }
     ?>
@@ -265,8 +265,8 @@ include "geometry.php";
 
         //Gebruik dezelfde code om de array af te printen
         //Test dit door de pagina te refreshen
-        sort($arr);
-        foreach ($arr as $name) {
+        sort($countries);
+        foreach ($countries as $name) {
             ?>
             <li>Name: <?php echo $name; ?></li>
         <?php } ?>
