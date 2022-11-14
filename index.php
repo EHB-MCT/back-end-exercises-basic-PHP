@@ -49,13 +49,6 @@ include "geometry.php";
     <p>Rechthoek: <?php echo calculateSurfaceAreaRectangle(9, 7); ?></p>
 </div>
 
-<div id="ex3">
-    <h3>Oefening 3</h3>
-    <p>Driehoek: <?php echo calculateSurfaceAreaTriangle(5, 3); ?></p>
-    <p>Vierkant: <?php echo calculateSurfaceAreaSquare(7); ?></p>
-    <p>Rechthoek: <?php echo calculateSurfaceAreaRectangle(9, 7); ?></p>
-    <p>Times executed: <?php echo $counter ?></p>
-</div>
 <div id="ex4">
     <h3>Oefening 4</h3>
 
