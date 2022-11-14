@@ -121,33 +121,34 @@ include "geometry.php";
         }
         echo $season;
     ?>
-
 </div>
+
 <div id="ex8">
     <h3>Oefening 8</h3>
     <?php
-    function splitsNaam($naam){
-        //Trim the whitespace
-        $newName = trim($naam);
-        //Split the name
-        $list = explode(' ', $naam);
-        return $list;
+    function splitName($name){
+        // Trim the whitespace
+        $newName = trim($name);
+        // Split the name
+        return explode(' ', $name);
     }
-    function voegNamenSamen($voornaam, $achternaam){
 
-        return $voornaam . ' ' . $achternaam;
+    function mergeNames($firstName, $lastName){
+        return $firstName . ' ' . $lastName;
     }
-    //Output 1 - Split naam
-    $list = splitsNaam("Mike Derycke ");
-    //Output 2 - Samenvoeging
-    $samenvoeging = voegNamenSamen($list[0],$list[1]);
+
+    // Output 1 - Split
+    $list = splitName("John Doe ");
+    // Output 2 - Merge
+    $merged = mergeNames($list[0], $list[1]);
     ?>
     <ul>
         <li>Voornaam: <?php echo $list[0];?></li>
         <li>Achternaam: <?php echo $list[1];?></li>
-        <li>Samenvoeging: <?php echo $samenvoeging;?></li>
+        <li>Samenvoeging: <?php echo $merged;?></li>
     </ul>
 </div>
+
 <div id="ex9">
     <h3>Oefening 9</h3>
     <h4>De Europese Unie:</h4>
