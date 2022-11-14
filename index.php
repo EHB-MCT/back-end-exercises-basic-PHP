@@ -16,7 +16,7 @@ include "geometry.php";
     <title>Basic PHP exercises</title>
 </head>
 <body class="container">
-<h1>Session 1 1</h1>
+<h1>Session 1</h1>
 <h2>Pick your exercise</h2>
 
 <select class="form-control" id="list">
@@ -36,25 +36,25 @@ include "geometry.php";
     <option>14</option>
 </select>
 
-<div id="oef1">
+<div id="ex1">
     <h3>Exercise 1</h3>
     <p>Surface area of a circle with radius 2.2 is <?php echo calculateSurfaceAreaCircle(2.2); ?></p>
 </div>
-<div id="oef2">
+<div id="ex2">
     <h3>Oefening 2</h3>
 
     <p>Driehoek: <?php echo berekenOppervlakteDriehoek(5, 3); ?></p>
     <p>Vierkant: <?php echo berekenOppervlakteVierkant(7); ?></p>
     <p>Rechthoek: <?php echo berekenOppervlakteRechthoek(9, 7); ?></p>
 </div>
-<div id="oef3">
+<div id="ex3">
     <h3>Oefening 3</h3>
     <p>Driehoek: <?php echo berekenOppervlakteDriehoek(5, 3); ?></p>
     <p>Vierkant: <?php echo berekenOppervlakteVierkant(7); ?></p>
     <p>Rechthoek: <?php echo berekenOppervlakteRechthoek(9, 7); ?></p>
     <p>Times executed: <?php echo $counter ?></p>
 </div>
-<div id="oef4">
+<div id="ex4">
     <h3>Oefening 4</h3>
 
     <?php
@@ -81,7 +81,7 @@ include "geometry.php";
     <?php } ?>
 
 </div>
-<div id="oef5">
+<div id="ex5">
     <h3>Oefening 5</h3>
     <?php
         $test = 20;
@@ -100,7 +100,7 @@ include "geometry.php";
     ?>
     <p>Het nummer is gelijk aan <?php echo $nr;?></p>
 </div>
-<div id="oef6">
+<div id="ex6">
     <h3>Oefening 6</h3>
     <?php
         $sum = 0;
@@ -110,7 +110,7 @@ include "geometry.php";
     ?>
     <p>De som vann alle cijfers tussen 1 en 30 is <?php echo $sum;?></p>
 </div>
-<div id="oef7">
+<div id="ex7">
     <h3>Oefening 7</h3>
     <?php
         $currentTime = date('l j/m/Y, G:i');
@@ -130,7 +130,7 @@ include "geometry.php";
     ?>
 
 </div>
-<div id="oef8">
+<div id="ex8">
     <h3>Oefening 8</h3>
     <?php
     function splitsNaam($naam){
@@ -155,7 +155,7 @@ include "geometry.php";
         <li>Samenvoeging: <?php echo $samenvoeging;?></li>
     </ul>
 </div>
-<div id="oef9">
+<div id="ex9">
     <h3>Oefening 9</h3>
     <h4>De Europese Unie:</h4>
     <p>De Europese Unie telt sinds 2013 in totaal 28 lidstaten.</p>
@@ -177,7 +177,7 @@ include "geometry.php";
 
 
 </div>
-<div id="oef10">
+<div id="ex10">
     <h3>Oefening 10</h3>
     <table class="table">
     <?php for($i = 1; $i <= 6; $i++){ ?>
@@ -194,7 +194,7 @@ include "geometry.php";
     </table>
 </div>
 
-<div id="oef11">
+<div id="ex11">
     <h3>Oefening 11</h3>
     <?php
 
@@ -213,7 +213,7 @@ include "geometry.php";
       ?>
 </div>
 
-<div id="oef12">
+<div id="ex12">
     <h3>Oefening 12</h3>
     <h4>De Europese Unie:</h4>
     <p>De Europese Unie telt sinds 2013 in totaal 28 lidstaten.</p>
@@ -236,7 +236,7 @@ include "geometry.php";
 
 </div>
 
-<div id="oef13">
+<div id="ex13">
     <h3>Oefening 13</h3>
     <h4>De Europese Unie:</h4>
     <p>De Europese Unie telt sinds 2013 in totaal 28 lidstaten.</p>
@@ -252,7 +252,7 @@ include "geometry.php";
 
 </div>
 
-<div id="oef14">
+<div id="ex14">
     <h3>Oefening 14</h3>
     <?php
         foreach($arr as $key => $country){

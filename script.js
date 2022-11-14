@@ -5,8 +5,8 @@ $(function (){
     $('#list').change(function(e){
         let nr = $('#list').val();
         $('div').hide();
-        $('#oef' + nr).show();
+        $('#ex' + nr).show();
     });
-    $('#oef1').show();
+    $('#ex1').show();
 
 });
