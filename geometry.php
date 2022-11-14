@@ -9,10 +9,11 @@ $counter = 0;
 //var_dump($docent);
 //var_dump($_SERVER);
 //die;
-function berekenOppervlakteCirkel($r){
+function calculateSurfaceAreaCircle($radius){
     global $counter;
     $counter++;
-    return pi() * $r * $r;
+    // M_PI is a default CONST from PHP for calculations
+    return M_PI * $radius * $radius;
 }
 function berekenOppervlakteDriehoek($basis, $hoogte){
     global $counter;

@@ -1,7 +1,7 @@
 <?php
-//Include something
-include "meetkunde.php";
-//Require something
+// Includes
+include "geometry.php";
+// Requires
 ?>
 <html lang="en">
 <head>
@@ -13,11 +13,11 @@ include "meetkunde.php";
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Basic PHP exercises</title>
 </head>
 <body class="container">
-<h1>Werkcollege 1</h1>
-<h2>Kies je oefening</h2>
+<h1>Session 1 1</h1>
+<h2>Pick your exercise</h2>
 
 <select class="form-control" id="list">
     <option>1</option>
@@ -37,8 +37,8 @@ include "meetkunde.php";
 </select>
 
 <div id="oef1">
-    <h3>Oefening 1</h3>
-    <p>De oppervlakte met r 2.2 is <?php echo berekenOppervlakteCirkel(2.2); ?></p>
+    <h3>Exercise 1</h3>
+    <p>Surface area of a circle with radius 2.2 is <?php echo calculateSurfaceAreaCircle(2.2); ?></p>
 </div>
 <div id="oef2">
     <h3>Oefening 2</h3>
@@ -197,18 +197,18 @@ include "meetkunde.php";
 <div id="oef11">
     <h3>Oefening 11</h3>
     <?php
-        
+
         $mail  = 'mike@ehb.com';
         $user = strstr($mail, '@', true);
         echo 'Resultaat A:' . $user;
-      
+
         $sub_string = 'mike@';
         $str = 'mike@ehb.com';
-      
+
         if (substr($str, 0, strlen($sub_string)) == $sub_string) {
           $str = substr($str, strlen($sub_string));
         }
-      
+
         echo '<br>Resultaat B:' . $str;
       ?>
 </div>
@@ -222,9 +222,9 @@ include "meetkunde.php";
         <?php
          //De variabele $arr is nog beschikbaarbaar van oefeningen 9
         //We kunnen dus geworden hersorteren met de volgende methode
-        
+
         //Gebruik dezelfde code om de array af te printen
-        //Test dit door de pagina te refreshen 
+        //Test dit door de pagina te refreshen
         shuffle($arr);
         foreach ($arr as $name) {
             ?>
@@ -232,7 +232,7 @@ include "meetkunde.php";
         <?php } ?>
     </ol>
 
-    
+
 
 </div>
 
@@ -242,13 +242,13 @@ include "meetkunde.php";
     <p>De Europese Unie telt sinds 2013 in totaal 28 lidstaten.</p>
     <h5>De volledige lijst van lidstaten die beginnen met de letter B</h5>
     <ol>
-        <?php      
+        <?php
         foreach ($arr as $name) {
             if(substr(strtolower($name),0,1) == "b") { ?>
             <li>Name: <?php echo $name; ?></li>
         <?php }} ?>
     </ol>
-    
+
 
 </div>
 
@@ -268,9 +268,9 @@ include "meetkunde.php";
         <?php
          //De variabele $arr is nog beschikbaarbaar van oefeningen 9
         //We kunnen dus geworden hersorteren met de volgende methode
-        
+
         //Gebruik dezelfde code om de array af te printen
-        //Test dit door de pagina te refreshen 
+        //Test dit door de pagina te refreshen
         sort($arr);
         foreach ($arr as $name) {
             ?>
