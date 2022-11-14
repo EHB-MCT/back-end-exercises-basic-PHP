@@ -192,14 +192,14 @@ include "geometry.php";
     <h3>Oefening 11</h3>
     <?php
 
-        $mail  = 'mike@ehb.com';
+        $mail  = 'jane@ehb.com';
         $user = strstr($mail, '@', true);
         echo 'Resultaat A:' . $user;
 
-        $sub_string = 'mike@';
-        $str = 'mike@ehb.com';
+        $sub_string = 'jane@';
+        $str = 'jane@ehb.com';
 
-        if (substr($str, 0, strlen($sub_string)) == $sub_string) {
+        if (strpos($str, $sub_string) === 0) {
           $str = substr($str, strlen($sub_string));
         }
 
