@@ -1,14 +1,15 @@
-$(function (){
-
-    return;
-
+(function (){
     //Small script to hide the divs and show the correct exercise
-    $('div').hide();
-    $('#list').change(function(e){
-        let nr = $('#list').val();
-        $('div').hide();
-        $('#ex' + nr).show();
+    document.querySelectorAll('div').forEach((element) => {
+        element.style.display = "none";
     });
-    $('#ex1').show();
-
-});
+    document.querySelector('#list').addEventListener("change", function(e){
+        let nr = document.querySelector('#list').value;
+        document.querySelectorAll('div').forEach((element) => {
+            element.style.display = "none";
+        });
+        console.log('#ex' + nr);
+        document.querySelector('#ex' + nr).style.display = "block";
+    });
+    document.querySelector('#ex1').style.display = "block";
+})();
