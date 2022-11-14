@@ -9,25 +9,29 @@ $counter = 0;
 //var_dump($docent);
 //var_dump($_SERVER);
 //die;
+
 function calculateSurfaceAreaCircle($radius){
     global $counter;
     $counter++;
     // M_PI is a default CONST from PHP for calculations
     return M_PI * $radius * $radius;
 }
-function berekenOppervlakteDriehoek($basis, $hoogte){
+
+function calculateSurfaceAreaTriangle($width, $height){
     global $counter;
     $counter++;
-    return ($basis * $hoogte) /2;
+    return ($width * $height) /2;
 }
-function berekenOppervlakteVierkant($zijde){
+
+function calculateSurfaceAreaSquare($width){
     global $counter;
     $counter++;
-    return berekenOppervlakteRechthoek($zijde,$zijde);
+    return calculateSurfaceAreaRectangle($width, $width);
 }
-function berekenOppervlakteRechthoek($zijde1,$zijde2){
+
+function calculateSurfaceAreaRectangle($width, $height){
     global $counter;
     $counter++;
-    return $zijde1 * $zijde2;
+    return $width * $height;
 }
 

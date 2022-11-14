@@ -40,18 +40,20 @@ include "geometry.php";
     <h3>Exercise 1</h3>
     <p>Surface area of a circle with radius 2.2 is <?php echo calculateSurfaceAreaCircle(2.2); ?></p>
 </div>
+
 <div id="ex2">
     <h3>Oefening 2</h3>
 
-    <p>Driehoek: <?php echo berekenOppervlakteDriehoek(5, 3); ?></p>
-    <p>Vierkant: <?php echo berekenOppervlakteVierkant(7); ?></p>
-    <p>Rechthoek: <?php echo berekenOppervlakteRechthoek(9, 7); ?></p>
+    <p>Driehoek: <?php echo calculateSurfaceAreaTriangle(5, 3); ?></p>
+    <p>Vierkant: <?php echo calculateSurfaceAreaSquare(7); ?></p>
+    <p>Rechthoek: <?php echo calculateSurfaceAreaRectangle(9, 7); ?></p>
 </div>
+
 <div id="ex3">
     <h3>Oefening 3</h3>
-    <p>Driehoek: <?php echo berekenOppervlakteDriehoek(5, 3); ?></p>
-    <p>Vierkant: <?php echo berekenOppervlakteVierkant(7); ?></p>
-    <p>Rechthoek: <?php echo berekenOppervlakteRechthoek(9, 7); ?></p>
+    <p>Driehoek: <?php echo calculateSurfaceAreaTriangle(5, 3); ?></p>
+    <p>Vierkant: <?php echo calculateSurfaceAreaSquare(7); ?></p>
+    <p>Rechthoek: <?php echo calculateSurfaceAreaRectangle(9, 7); ?></p>
     <p>Times executed: <?php echo $counter ?></p>
 </div>
 <div id="ex4">
