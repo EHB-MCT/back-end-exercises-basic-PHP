@@ -96,8 +96,8 @@ include "geometry.php";
     <h3>Oefening 6</h3>
     <?php
         $sum = 0;
-        for($i = 1; $i <= 30; $i++){
-            $sum += $i;
+        for($rowCount = 1; $rowCount <= 30; $rowCount++){
+            $sum += $rowCount;
         }
     ?>
     <p>De som van alle cijfers tussen 1 en 30 is <?php echo $sum;?></p>
@@ -174,12 +174,12 @@ include "geometry.php";
 <div id="ex10">
     <h3>Oefening 10</h3>
     <table class="table">
-    <?php for($i = 1; $i <= 6; $i++){ ?>
+    <?php for($rowCount = 1; $rowCount <= 6; $rowCount++){ ?>
         <tr>
-        <?php  for($j = 1; $j <= 5; $j++){
+        <?php  for($columnCount = 1; $columnCount <= 5; $columnCount++){
             //prep variables
-            $result = $i * $j;
-            $string = $i . '*' . $j . '=' . $result;
+            $result = $rowCount * $columnCount;
+            $string = $rowCount . '*' . $columnCount . '=' . $result;
             ?>
             <td><?php echo $string;?></td>
         <?php } ?>
