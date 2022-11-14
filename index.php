@@ -96,12 +96,13 @@ include "geometry.php";
     <h3>Oefening 6</h3>
     <?php
         $sum = 0;
-        for($i = 1; $i<=30; $i++){
+        for($i = 1; $i <= 30; $i++){
             $sum += $i;
         }
     ?>
-    <p>De som vann alle cijfers tussen 1 en 30 is <?php echo $sum;?></p>
+    <p>De som van alle cijfers tussen 1 en 30 is <?php echo $sum;?></p>
 </div>
+
 <div id="ex7">
     <h3>Oefening 7</h3>
     <?php
