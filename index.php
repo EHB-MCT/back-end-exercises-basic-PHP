@@ -53,26 +53,22 @@ include "geometry.php";
     <h3>Oefening 4</h3>
 
     <?php
-    $variabele1 = 0;
-    //    $variabele2 = 0;
-    $variabele3 = "";
-    $variabele4 = 89;
-    $variabele5 = "Mike";
+    $variable = 0;
+    // $variable2 = 0;
+    $variable3 = "";
+    $variable4 = 89;
 
-    if (isset($variabele1)) { ?>
+    if (isset($variable)) { ?>
         <p>v1 is OK!</p>
     <?php }
-    if (!isset($variabele2)) { ?>
+    if (!isset($variable2)) { ?>
         <p>v2 is OK!</p>
     <?php }
-    if (empty($variabele3)) { ?>
+    if (empty($variable3)) { ?>
         <p>v3 is OK!</p>
     <?php }
-    if (!empty($variabele4)) { ?>
+    if (!empty($variable4)) { ?>
         <p>v4 is OK!</p>
-    <?php }
-    if (isset($variabele5) == true && empty($variabele5) == false) { ?>
-        <p>v5 is OK!</p>
     <?php } ?>
 
 </div>
