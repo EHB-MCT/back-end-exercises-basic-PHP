@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 // Includes
 include "geometry.php";
 // Requires
@@ -130,14 +131,16 @@ include "geometry.php";
 <div id="ex8">
     <h3>Oefening 8</h3>
     <?php
-    function splitName($name){
+    function splitName(string $name): array
+    {
         // Trim the whitespace
         $newName = trim($name);
         // Split the name
-        return explode(' ', $name);
+        return explode(' ', $newName);
     }
 
-    function mergeNames($firstName, $lastName){
+    function mergeNames(string $firstName, string $lastName): string
+    {
         return $firstName . ' ' . $lastName;
     }
 

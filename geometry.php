@@ -9,20 +9,24 @@
 //var_dump($_SERVER);
 //die;
 
-function calculateSurfaceAreaCircle($radius){
+function calculateSurfaceAreaCircle(float $radius): float
+{
     // M_PI is a default CONST from PHP for calculations
     return M_PI * $radius * $radius;
 }
 
-function calculateSurfaceAreaTriangle($width, $height){
-    return ($width * $height) /2;
+function calculateSurfaceAreaTriangle(float $width, float $height): float
+{
+    return ($width * $height) / 2;
 }
 
-function calculateSurfaceAreaSquare($width){
+function calculateSurfaceAreaSquare(float $width): float
+{
     return calculateSurfaceAreaRectangle($width, $width);
 }
 
-function calculateSurfaceAreaRectangle($width, $height){
+function calculateSurfaceAreaRectangle(float $width, $height): float
+{
     return $width * $height;
 }
 
